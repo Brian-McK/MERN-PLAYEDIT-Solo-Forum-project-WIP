@@ -1,11 +1,15 @@
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
 
-function SearchBar() {
+function SearchBar(props) {
   return (
     <form className="SearchBar" noValidate autoComplete="off">
-      <TextField id="standard-search" label="Search field" type="search" />
+      <TextField
+        fullWidth={props.fullWidth}
+        variant={props.variant}
+        label={props.label}
+        id="standard-search"
+        type="search"
+      />
     </form>
   );
 }

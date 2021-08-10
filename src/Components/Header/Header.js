@@ -1,10 +1,11 @@
 import NavBar from "../NavBar/NavBar";
+import TrendingPosts from "../TrendingPosts/TrendingPosts";
 
-function Header(props) {
+function Header() {
   return (
     <div className="Header">
-      <h1>{props.MainText}</h1>
       <NavBar></NavBar>
+      <TrendingPosts></TrendingPosts>
     </div>
   );
 }
