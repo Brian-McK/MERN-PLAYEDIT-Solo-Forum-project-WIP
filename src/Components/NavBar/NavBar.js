@@ -15,7 +15,7 @@ function NavBar() {
         alignItems="center"
       >
         <Grid item xs={12} sm={2} md={4}>
-          <img src={logo} className="logo"></img>
+          <img src={logo} alt="Logo" className="logo"></img>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SearchBar

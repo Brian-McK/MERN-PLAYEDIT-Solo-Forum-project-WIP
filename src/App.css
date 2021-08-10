@@ -2,8 +2,14 @@
   text-align: center;
 }
 
-/* NavBar Styling */
+/* NavBar */
 
 .NavBar .logo {
   height: 70px;
+}
+
+/* Trending Post Card */
+
+.TrendingPostCard {
+  border: 2px solid teal;
 }

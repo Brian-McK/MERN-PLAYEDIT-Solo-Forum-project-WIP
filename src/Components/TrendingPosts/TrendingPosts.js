@@ -1,9 +1,11 @@
 import Grid from "@material-ui/core/Grid";
+import TrendingPostCard from "./TrendingPostCard";
+import Image from "../../images/gaming.jpg";
 
 function TrendingPosts() {
   return (
     <div className="TrendingPosts">
-      <h4>Trending Posts</h4>
+      <h3>Trending Posts</h3>
       <Grid
         container
         spacing={2}
@@ -12,16 +14,44 @@ function TrendingPosts() {
         alignItems="center"
       >
         <Grid item xs={6} sm={6} md={3}>
-          1
+          <TrendingPostCard
+            Image={Image}
+            Title={"Some image title"}
+            HeadingText={"Heading"}
+            BodyText={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ></TrendingPostCard>
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
-          2
+          <TrendingPostCard
+            Image={Image}
+            Title={"Some image title"}
+            HeadingText={"Heading"}
+            BodyText={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ></TrendingPostCard>{" "}
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
-          3
+          <TrendingPostCard
+            Image={Image}
+            Title={"Some image title"}
+            HeadingText={"Heading"}
+            BodyText={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ></TrendingPostCard>{" "}
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
-          4
+          <TrendingPostCard
+            Image={Image}
+            Title={"Some image title"}
+            HeadingText={"Heading"}
+            BodyText={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ></TrendingPostCard>{" "}
         </Grid>
       </Grid>
     </div>
