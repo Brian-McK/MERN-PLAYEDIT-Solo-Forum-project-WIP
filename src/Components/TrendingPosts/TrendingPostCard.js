@@ -40,6 +40,9 @@ function TrendingPostCard(props) {
       <Button size="small" color="primary">
         View Post
       </Button>
+      <Button size="small" color="primary">
+        View Community
+      </Button>
     </CardActions>
   </Card>
   );

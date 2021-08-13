@@ -6,7 +6,7 @@ import Image2 from "../../images/ps4.png";
 function TrendingPosts() {
   return (
     <div className="TrendingPosts">
-      <h3>Trending Posts</h3>
+      <h3>Trending Today</h3>
       <Grid
         container
         spacing={2}
