@@ -1,6 +1,7 @@
 import Grid from "@material-ui/core/Grid";
 import TrendingPostCard from "./TrendingPostCard";
 import Image from "../../images/gaming.jpg";
+import Image2 from "../../images/ps4.png";
 
 function TrendingPosts() {
   return (
@@ -25,7 +26,7 @@ function TrendingPosts() {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           <TrendingPostCard
-            Image={Image}
+            Image={Image2}
             Title={"Some image title"}
             HeadingText={"Heading"}
             BodyText={
@@ -45,7 +46,7 @@ function TrendingPosts() {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           <TrendingPostCard
-            Image={Image}
+            Image={Image2}
             Title={"Some image title"}
             HeadingText={"Heading"}
             BodyText={
