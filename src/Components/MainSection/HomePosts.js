@@ -1,19 +1,11 @@
 import Grid from "@material-ui/core/Grid";
-import { makeStyles } from '@material-ui/core/styles';
-import WhatshotIcon from "@material-ui/icons/Whatshot";
-import NewReleasesIcon from "@material-ui/icons/NewReleases";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import { makeStyles } from "@material-ui/core/styles";
+import HomePost from "./HomePost";
 
 const useStyles = makeStyles(() => ({
   customWidthContainer: {
-    width: '80%',
-    border: '2px solid pink',
-  },
-  customGridItemIcons: {
-    border: '2px solid red',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center'
+    width: "90%",
+    border: "2px solid pink",
   }
 }));
 
@@ -25,22 +17,17 @@ function HomePosts() {
       <Grid
         className={classes.customWidthContainer}
         container
-        direction="row"
+        direction="column"
         justifyContent="space-evenly"
         alignItems="center"
       >
-        <Grid item className={classes.customGridItemIcons}>
-          <WhatshotIcon color="primary" fontSize="large" />
-          Hot
-        </Grid>
-        <Grid item className={classes.customGridItemIcons}>
-          <NewReleasesIcon color="primary" fontSize="large" />
-          New
-        </Grid>
-        <Grid item className={classes.customGridItemIcons}>
-          <ArrowUpwardIcon color="primary" fontSize="large" />
-          Top
-        </Grid>
+        <HomePost></HomePost>
+        <HomePost></HomePost>
+        <HomePost></HomePost>
+        <HomePost></HomePost>
+        <HomePost></HomePost>
+        <HomePost></HomePost>
+        <HomePost></HomePost>
       </Grid>
     </div>
   );

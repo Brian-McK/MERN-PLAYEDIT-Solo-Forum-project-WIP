@@ -22,3 +22,9 @@
   display: flex;
   justify-content: center;
 }
+
+.HomePost {
+  border: crimson 2px solid;
+  width: 100%;
+  min-height: 200px;
+}
