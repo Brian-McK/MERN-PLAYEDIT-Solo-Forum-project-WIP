@@ -15,8 +15,10 @@
 
 /* .MainSection {
   border: 2px solid red;
-}
-
-.hello {
-  border: 2px solid black;
 } */
+
+.SortingIcons {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}

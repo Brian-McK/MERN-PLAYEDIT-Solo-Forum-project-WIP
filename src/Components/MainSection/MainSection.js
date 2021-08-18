@@ -13,16 +13,16 @@ function MainSection() {
         justifyContent="flex-start"
         alignItems="flex-start"
       >
-        <Grid className="hello" item xs={12} sm={12} md={7} lg={7}>
+        <Grid item xs={12} sm={12} md={7} lg={7}>
           <SortingIcons></SortingIcons>
         </Grid>
 
-        <Grid className="hello" item xs={12} sm={12} md={7} lg={7}>
+        <Grid item xs={12} sm={12} md={7} lg={7}>
           popular posts
         </Grid>
 
         <Hidden xsDown>
-          <Grid className="hello" item xs={12} sm={12} md={5} lg={5}>
+          <Grid item xs={12} sm={12} md={5} lg={5}>
             top communities
           </Grid>
         </Hidden>
