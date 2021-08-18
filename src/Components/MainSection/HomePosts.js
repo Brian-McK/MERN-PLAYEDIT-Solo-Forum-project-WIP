@@ -6,8 +6,8 @@ import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 const useStyles = makeStyles(() => ({
   customWidthContainer: {
-    width: '50%',
-    border: '2px solid blue',
+    width: '80%',
+    border: '2px solid pink',
   },
   customGridItemIcons: {
     border: '2px solid red',
@@ -17,11 +17,11 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-function SortingIcons() {
+function HomePosts() {
   const classes = useStyles();
 
   return (
-    <div className="SortingIcons">
+    <div className="HomePosts">
       <Grid
         className={classes.customWidthContainer}
         container
@@ -46,4 +46,4 @@ function SortingIcons() {
   );
 }
 
-export default SortingIcons;
+export default HomePosts;

@@ -11,13 +11,13 @@
 /* Trending Post Card */
 
 
-/* Main Section */
+/* Home Main */
 
-/* .MainSection {
+/* .HomeMain {
   border: 2px solid red;
 } */
 
-.SortingIcons {
+.SortingIcons, .HomePosts{
   border: 2px solid black;
   display: flex;
   justify-content: center;

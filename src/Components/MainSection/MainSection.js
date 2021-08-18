@@ -1,10 +1,11 @@
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 import SortingIcons from "./SortingIcons";
+import HomePosts from "./HomePosts";
 
 function MainSection() {
   return (
-    <div className="MainSection">
+    <div className="HomeMain">
       My Main Section
       <Grid
         container
@@ -18,7 +19,7 @@ function MainSection() {
         </Grid>
 
         <Grid item xs={12} sm={12} md={7} lg={7}>
-          popular posts
+          <HomePosts></HomePosts>
         </Grid>
 
         <Hidden xsDown>
