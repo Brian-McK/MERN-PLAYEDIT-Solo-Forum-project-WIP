@@ -5,8 +5,7 @@ import HomePost from "./HomePost";
 const useStyles = makeStyles(() => ({
   customWidthContainer: {
     width: "90%",
-    border: "2px solid pink",
-  }
+  },
 }));
 
 function HomePosts() {
@@ -17,17 +16,21 @@ function HomePosts() {
       <Grid
         className={classes.customWidthContainer}
         container
-        direction="column"
-        justifyContent="space-evenly"
-        alignItems="center"
+        direction="row"
+        spacing={1}
       >
-        <HomePost></HomePost>
-        <HomePost></HomePost>
-        <HomePost></HomePost>
-        <HomePost></HomePost>
-        <HomePost></HomePost>
-        <HomePost></HomePost>
-        <HomePost></HomePost>
+        <Grid item xs={12}>
+          <HomePost></HomePost>
+        </Grid>
+        <Grid item xs={12}>
+          <HomePost></HomePost>
+        </Grid>
+        <Grid item xs={12}>
+          <HomePost></HomePost>
+        </Grid>
+        <Grid item xs={12}>
+          <HomePost></HomePost>
+        </Grid>
       </Grid>
     </div>
   );

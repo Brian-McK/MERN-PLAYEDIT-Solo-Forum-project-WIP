@@ -4,7 +4,6 @@ import PostVote from "./PostVote";
 
 const useStyles = makeStyles(() => ({
   customWidthContainer: {
-    border: "2px solid yellow",
     minHeight: "inherit",
   },
   customGridItemIcons: {
@@ -24,13 +23,34 @@ function HomePost() {
         direction="row"
         alignItems="center"
       >
-        <Grid item className={classes.customGridItemIcons}>
+        <Grid
+          item
+          className={classes.customGridItemIcons}
+          xs={2}
+          sm={2}
+          md={2}
+          lg={1}
+        >
           <PostVote></PostVote>
         </Grid>
-        <Grid item className={classes.customGridItemIcons}>
+        <Grid
+          item
+          className={classes.customGridItemIcons}
+          xs={7}
+          sm={6}
+          md={7}
+          lg={7}
+        >
           Main Section
         </Grid>
-        <Grid item className={classes.customGridItemIcons}>
+        <Grid
+          item
+          className={classes.customGridItemIcons}
+          xs={3}
+          sm={4}
+          md={3}
+          lg={4}
+        >
           Image Preview
         </Grid>
       </Grid>
