@@ -4,6 +4,9 @@ import Image2 from "../../images/ps4.png";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import { Typography } from "@material-ui/core";
+import CommunitiesList from "./CommunitiesList";
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 const useStyles = makeStyles(() => ({
   customWidthContainer: {
@@ -25,7 +28,7 @@ const useStyles = makeStyles(() => ({
     color: "black",
     fontWeight: "bolder",
     backgroundColor: "white",
-    borderRadius: "20px",
+    borderRadius: "4px",
   },
 }));
 
@@ -53,11 +56,17 @@ function HomeTopCommunities() {
         </Grid>
 
         <Grid item xs={12} style={{ border: "2px solid red" }}>
-          List
+          <CommunitiesList></CommunitiesList>
         </Grid>
 
         <Grid item xs={12} style={{ border: "2px solid red" }}>
-          Button View All
+          <ButtonGroup
+            size="medium"
+            color="primary"
+            aria-label="medium outlined primary button group"
+          >
+            <Button>View All Communities</Button>
+          </ButtonGroup>
         </Grid>
       </Grid>
     </div>

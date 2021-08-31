@@ -6,7 +6,6 @@ import HomeTopCommunities from "./HomeTopCommunities";
 function MainSection() {
   return (
     <div className="HomeMain">
-      My Main Section
       <Grid
         container
         spacing={2}
