@@ -17,7 +17,7 @@
   border: 2px solid red;
 } */
 
-.SortingIcons, .HomePosts{
+.SortingIcons, .HomePosts, .HomeTopCommunities {
   border: 2px solid black;
   display: flex;
   justify-content: center;
