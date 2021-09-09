@@ -55,16 +55,16 @@ function HomePost(props) {
           lg={7}
         >
           <Grid item xs={12}>
-            Main section 1
+            Community Name
           </Grid>
           <Grid item xs={12}>
-            Main Section 2
+            Post Heading
           </Grid>
           <Grid item xs={12}>
-            Main section 3
+            Preview Text
           </Grid>
           <Grid item xs={12}>
-            Main section 4
+            Link to the comments
           </Grid>
         </Grid>
         <Grid
