@@ -25,7 +25,7 @@ export const getPostById = async (req, res) => {
   }
 };
 
-// not working properly
+// create a new post
 export const createPosts = async (req, res) => {
   try {
     // extract from req.body
@@ -40,3 +40,17 @@ export const createPosts = async (req, res) => {
     res.status(409).json({ success: false, message: error.message });
   }
 };
+
+// delete by obj _id
+export const deletePostById = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const postForDeletion = await Posts.findOne({ _id: id });
+    await postForDeletion.remove();
+    res.status(200).json(postForDeletion);
+  } catch (error) {
+    res.status(422).json({ success: false, message: error.message });
+  }
+};
+
+// update by obj _id
