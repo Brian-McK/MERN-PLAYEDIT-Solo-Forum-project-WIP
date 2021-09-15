@@ -8,12 +8,12 @@ import postsRoutes from "./routes/posts.js";
 
 const app = express();
 
-// use routes
-app.use("/posts", postsRoutes);
-
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+
+// use routes
+app.use("/posts", postsRoutes);
 
 const CONNECTION_URL =
   "mongodb+srv://Brian:9eadN7AfaAL3kKGM@cluster0.tnu4g.mongodb.net/PlayedIt?retryWrites=true&w=majority";

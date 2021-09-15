@@ -1,14 +1,16 @@
 import mongoose from "mongoose";
 
-const postSchema = new mongoose.Schema({
-  name: {
+const postSchema = mongoose.Schema({
+  createdAt: {
+    type: Date,
+    default: new Date()
+  },
+  jimmy: {
     type: String,
-  },
-  age: {
-    type: Number,
-  },
+    default: "test"
+  }
 });
 
-const Post = mongoose.model("Post", postSchema);
+const Posts = mongoose.model("Posts", postSchema);
 
-export default Post;
+export default Posts;
